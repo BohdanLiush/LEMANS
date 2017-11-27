@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="LEMANS:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="LEMANS.war">
+      <element id="artifact" artifact-name="LEMANS:war exploded" />
+    </root>
+  </artifact>
+</component>

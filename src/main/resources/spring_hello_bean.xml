@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="message" class="ru.mai.dep806.mvcapp.controllers.SpringHelloWorld">
+    <!--init-method="beanInit" destroy-method="destroyBean">-->
+    <property name="message" value="Hello Batman"/>
+
+</bean>
+    <bean id="messageToYou" class="ru.mai.dep806.mvcapp.controllers.MessageToYou" parent="message">
+        <property name="message" value="Hello Batman"/>
+        <property name="messageToYou" value="and im very glad to see you too"/>
+
+    </bean>
+    <!--<bean class="ru.mai.dep806.mvcapp.controllers.BeanPostProcessorImpl"/>-->
+    <!--scope="singleton">-->
+      <!--<property name="helloMessage" value="WonderWomen"/>-->
+</beans>
